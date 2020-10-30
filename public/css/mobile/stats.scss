@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    h2 {
+      margin-top: 0;
+    }
+    .buttons {
+      width: 100%;
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column !important;
+      row-gap: 10px;
+    }
+    canvas {
+      max-width: 350px !important;
+    }
+  }
+}

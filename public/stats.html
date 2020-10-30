@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="TBinfo">
+  <meta property="og:description" content="Tuberculosis affects millions of people. Learn more from us.">
+  <meta property="og:image" content="https://tb-info.web.app/img/logo.png">
+  <meta property="og:url" content="https://tb-info.web.app/index.html">
+  <meta property="og:site_name" content="TBinfo.web.app">
+  <meta name="theme-color" content="#ff6347">
+  <link rel="icon" href="img/heart.png">
+  <title>TBinfo</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/stats.css" />
+  <link rel="stylesheet" href="css/mobile/style.css" />
+  <link rel="stylesheet" href="css/mobile/stats.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo-div">
+      <i class="fas fa-bars menu"></i>
+      <a href="index.html">
+        <img src="img/logo-dark.svg" alt="TBinfo" class="logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <a href="about.html">
+        <li>What is TB</li>
+      </a>
+      <a href="stats.html">
+        <li>Stats</li>
+      </a>
+      <a href="self-evaluation.html" id="nav-self-evaluation">
+        <li>Self-Evaluation</li>
+      </a>
+      <a href="about-us.html">
+        <li>About us</li>
+      </a>
+    </ul>
+  </nav>
+  <!-- Container -->
+  <div class="container">
+    <h2>Tuberculosis Statistics in Malaysia</h2>
+    <div class="buttons">
+      <!-- <button id="default" class="btn-light">Default</button> -->
+      <!-- <button id="filter" class="btn-light">2008 to 2018</button> -->
+      <div id="md-select3" class="md-select chart-type">
+        <label for="ul-id">
+          <button type="button">Incidence per 100,000</button>
+        </label>
+        <ul role="listbox" id="ul-id" class="md-whiteframe-z1" name="ul-id">
+          <li role="option" class="active" aria-selected="true">Incidence per 100,000</li>
+          <li role="option" class="" aria-selected="false">Tuberculosis Detection Rate</li>
+          <li role="option" class="" aria-selected="false">Successful Treatement Rate</li>
+        </ul>
+      </div>
+      <div id="md-select4" class="md-select country">
+        <label for="ul-id">
+          <button type="button">Malaysia</button>
+        </label>
+        <ul role="listbox" id="ul-id" class="md-whiteframe-z1" name="ul-id">
+          <li role="option" class="active" aria-selected="true">Malaysia</li>
+          <li role="option" class="" aria-selected="false">Malaysia & U.S.</li>
+        </ul>
+      </div>
+      <div class="year">
+        <span>From</span>
+        <div id="md-select1" class="md-select">
+          <label for="ul-id">
+            <button type="button">2000</button>
+          </label>
+          <ul role="listbox" id="ul-id" class="md-whiteframe-z1" name="ul-id">
+            <li role="option" class="active" aria-selected="true">2000</li>
+            <li role="option" class="" aria-selected="false">2001</li>
+            <li role="option" class="" aria-selected="false">2002</li>
+            <li role="option" class="" aria-selected="false">2003</li>
+            <li role="option" class="" aria-selected="false">2004</li>
+            <li role="option" class="" aria-selected="false">2005</li>
+            <li role="option" class="" aria-selected="false">2006</li>
+            <li role="option" class="" aria-selected="false">2007</li>
+            <li role="option" class="" aria-selected="false">2008</li>
+            <li role="option" class="" aria-selected="false">2009</li>
+            <li role="option" class="" aria-selected="false">2010</li>
+            <li role="option" class="" aria-selected="false">2011</li>
+            <li role="option" class="" aria-selected="false">2012</li>
+            <li role="option" class="" aria-selected="false">2013</li>
+            <li role="option" class="" aria-selected="false">2014</li>
+            <li role="option" class="" aria-selected="false">2015</li>
+            <li role="option" class="" aria-selected="false">2016</li>
+            <li role="option" class="" aria-selected="false">2017</li>
+          </ul>
+        </div>
+        <span>To</span>
+        <div id="md-select2" class="md-select">
+          <label for="ul-id">
+            <button type="button">2018</button>
+          </label>
+          <ul role="listbox" id="ul-id" class="md-whiteframe-z1" name="ul-id">
+            <li role="option" class="" aria-selected="false">2001</li>
+            <li role="option" class="" aria-selected="false">2002</li>
+            <li role="option" class="" aria-selected="false">2003</li>
+            <li role="option" class="" aria-selected="false">2004</li>
+            <li role="option" class="" aria-selected="false">2005</li>
+            <li role="option" class="" aria-selected="false">2006</li>
+            <li role="option" class="" aria-selected="false">2007</li>
+            <li role="option" class="" aria-selected="false">2008</li>
+            <li role="option" class="" aria-selected="false">2009</li>
+            <li role="option" class="" aria-selected="false">2010</li>
+            <li role="option" class="" aria-selected="false">2011</li>
+            <li role="option" class="" aria-selected="false">2012</li>
+            <li role="option" class="" aria-selected="false">2013</li>
+            <li role="option" class="" aria-selected="false">2014</li>
+            <li role="option" class="" aria-selected="false">2015</li>
+            <li role="option" class="" aria-selected="false">2016</li>
+            <li role="option" class="" aria-selected="false">2017</li>
+            <li role="option" class="active" aria-selected="true">2018</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <canvas id="line-chart" width="100vw" height="60vw"></canvas>
+    <h3>Incedence per 100,000 in 2018</h3>
+    <canvas id="chart2" class="other" width="100vw" height="60vw"></canvas>
+    <h3>Successful Treatement Rate in 2018</h3>
+    <canvas id="chart3" class="other" width="100vw" height="60vw"></canvas>
+    <h3>Total incidence per 100,000 from 2000</h3>
+    <canvas id="chart4" class="other" width="100vw" height="60vw"></canvas>
+    <h3>Total incidence from 2001</h3>
+    <canvas id="chart5" class="other" width="100vw" height="60vw"></canvas>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <a href="">
+      <img src="img/logo-light.svg" alt="TBinfo" class="logo">
+    </a>
+    <div class="footer-links">
+      <div class="links">
+        <h4>TBinfo</h4>
+        <ul class="links"></ul>
+        <a href="about.html">
+          <li>What is TB</li>
+        </a>
+        <a href="stats.html">
+          <li>Stats</li>
+        </a>
+        <a href="self-evaluation.html">
+          <li>Self Evaluation</li>
+        </a>
+        <a href="about-us.html">
+          <li>About us</li>
+        </a>
+        </ul>
+      </div>
+      <ul class="follow-us">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+        </div>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script src="js/nav.js"></script>
+<script src="js/fetch.js"></script>
+<script src="js/chart.js"></script>
+
+</html>

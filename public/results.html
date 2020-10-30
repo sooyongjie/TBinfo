@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="TBinfo">
+    <meta property="og:description" content="Tuberculosis affects millions of people. Learn more from us.">
+    <meta property="og:image" content="https://tb-info.web.app/img/logo.png">
+    <meta property="og:url" content="https://tb-info.web.app/index.html">
+    <meta property="og:site_name" content="TBinfo.web.app">
+    <meta name="theme-color" content="#ff6347">
+    <link rel="icon" href="img/heart.png">
+    <title>TBinfo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/results.css" />
+    <link rel="stylesheet" href="css/mobile/style.css" />
+    <link rel="stylesheet" href="css/mobile/results.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="js/firebase-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-div">
+            <i class="fas fa-bars menu"></i>
+            <a href="index.html">
+                <img src="img/logo-dark.svg" alt="TBinfo" class="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <a href="about.html">
+                <li>What is TB</li>
+            </a>
+            <a href="stats.html">
+                <li>Stats</li>
+            </a>
+            <a href="self-evaluation.html" id="nav-self-evaluation">
+                <li>Self-Evaluation</li>
+            </a>
+            <a href="about-us.html">
+                <li>About us</li>
+            </a>
+        </ul>
+    </nav>
+    <!-- Container -->
+    <div class="container">
+        <p>Your risk:</p>
+        <div class="percentage-container">
+            <h1 id="percentage">0</h1>
+            <h1>%</h1>
+        </div>
+        <p id="results">If you see this, check the codet</p>
+        <a href="self-evaluation.html">
+            <button class="btn-strong">Do evaluation again</button>
+        </a>
+        <div class="charts">
+            <h3>"Are you familar with Tuberculosis?"</h3>
+            <canvas id="q1" width="50px" height="30px"></canvas>
+            <h3>"Are you aware of how Tuberculosis spreads?"</h3>
+            <canvas id="q2" width="50px" height="30px"></canvas>
+            <h3>"Are you aware of the differences between Latent Tuberculosis Infection
+                and Tuberculosis Disease?"</h3>
+            <canvas id="q3" width="50px" height="30px"></canvas>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <a href="">
+            <img src="img/logo-light.svg" alt="TBinfo" class="logo">
+        </a>
+        <div class="footer-links">
+            <div class="links">
+                <h4>TBinfo</h4>
+                <ul class="links"></ul>
+                <a href="about.html">
+                    <li>What is TB</li>
+                </a>
+                <a href="stats.html">
+                    <li>Stats</li>
+                </a>
+                <a href="self-evaluation.html">
+                    <li>Self Evaluation</li>
+                </a>
+                <a href="about-us.html">
+                    <li>About us</li>
+                </a>
+                </ul>
+            </div>
+            <ul class="follow-us">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="js/nav.js"></script>
+<script src="js/getResults.js"></script>
+
+</html>

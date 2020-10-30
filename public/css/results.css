@@ -1,0 +1,36 @@
+.container {
+  min-height: 85vh;
+  padding: 15vh 0 50px 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0px !important;
+}
+
+.container .percentage-container {
+  display: flex;
+}
+
+.container .percentage-container h1 {
+  font-size: 60px;
+}
+
+.container .btn-strong {
+  margin-top: 20px;
+}
+
+.container .charts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container .charts canvas {
+  max-width: 35vw;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=results.css.map */

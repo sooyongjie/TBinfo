@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 15vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 50px;
+    .top {
+      height: 400px;
+      padding: 0;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 50px;
+      .left {
+        width: 90vw;
+        align-items: center;
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .right {
+        padding: 10px 0 0 0;
+        width: 90vw;
+        img {
+          height: 200px;
+        }
+      }
+    }
+    .middle {
+      height: 500px;
+      margin: 0;
+    }
+  }
+}

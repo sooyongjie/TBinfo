@@ -1,0 +1,6 @@
+@media only screen and (max-width: 1000px) {
+  .container .charts canvas {
+    max-width: 350px !important;
+  }
+}
+/*# sourceMappingURL=results.css.map */

@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px !important;
+}
+
+.container h2 {
+  margin-top: 40px;
+}
+
+.container .buttons {
+  max-width: 50vw;
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.md-select *,
+.md-select :after,
+.md-select :before,
+.md-select [type="button"] {
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  cursor: pointer;
+}
+
+.md-select [type="button"] {
+  width: 65px;
+  padding: 6px 8px 6px 10px;
+  color: #c45850;
+  background-color: rgba(196, 88, 80, 0.1);
+  text-align: left;
+  text-shadow: none;
+  z-index: 1;
+  outline: none;
+}
+
+.md-select [type="button"]:after {
+  content: "\25be";
+  float: right;
+}
+
+.md-select ul[role="listbox"] {
+  width: 65px;
+  max-height: 0;
+  position: absolute;
+  transform: translateY(2%);
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+}
+
+.md-select ul[role="listbox"] li {
+  line-height: 40px;
+  margin: 0;
+  padding: 0 16px;
+  outline: none;
+  overflow: hidden;
+}
+
+.md-select ul[role="listbox"] li:focus, .md-select ul[role="listbox"] li:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.md-select ul[role="listbox"] li.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.md-select.active ul {
+  max-height: 50vh;
+  padding: 8px 0 8px 0px;
+  overflow-y: scroll;
+  /* Add the ability to scroll */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+
+.md-select.active ul::-webkit-scrollbar {
+  display: none;
+}
+
+.chart-type [type="button"],
+.chart-type ul {
+  width: 230px;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.chart-type ul[role="listbox"] {
+  width: 230px;
+}
+
+.country [type="button"],
+.country ul {
+  width: 150px;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.country ul[role="listbox"] {
+  width: 150px;
+}
+
+.year {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+h3 {
+  margin: 0 0 0 0;
+}
+
+canvas {
+  max-width: 50vw !important;
+  margin: 20px 0 60px 0;
+}
+
+canvas.other {
+  max-width: 35vw !important;
+}
+/*# sourceMappingURL=stats.css.map */

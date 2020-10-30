@@ -1,0 +1,98 @@
+.container {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container h1 {
+  margin: 120px 0 25px 0;
+}
+
+.container .questions {
+  width: 100%;
+}
+
+.container .questions .question {
+  height: auto;
+  padding: 0 30vw 10px 30vw;
+  border-radius: 20px;
+}
+
+.container .questions .question h3 {
+  margin: 12px 0 24px 0;
+}
+
+.container .questions .question h3 i {
+  margin-right: 12px;
+}
+
+.container .questions .question h3 ul {
+  margin: 5px 0 -12px 50px;
+}
+
+.container .questions .question h3 ul li {
+  list-style-type: disc;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container .questions .question .answers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin: 0 0 32px 0;
+}
+
+.container .questions .question .answers .answer {
+  padding: 12px 0 12px 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: 0.1s;
+}
+
+.container .questions .question .answers .answer:hover {
+  border-color: black;
+  color: black;
+  transition: 0.1s;
+}
+
+.container .questions .question .answers .answer:focus {
+  background: black;
+}
+
+.container .questions .question .answers .answer.selected, .container .questions .question .answers .answer:active {
+  background: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.container .controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .controls button {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  border: none;
+  color: #333;
+}
+
+.container .controls button.back {
+  padding: 0 0 0 30vw;
+}
+
+.container .controls button.next {
+  padding: 0 30vw 0 0;
+}
+/*# sourceMappingURL=self-evaluation.css.map */

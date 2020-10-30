@@ -1,0 +1,10 @@
+.container {
+  padding: 100px 15vw 80px 15vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  img {
+    width: 300px;
+    align-self: center;
+  }
+}

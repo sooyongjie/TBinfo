@@ -1,0 +1,176 @@
+html {
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+
+body,
+ul,
+h1,
+h2,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  padding: 6px 10px 6px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+button:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+.btn-light {
+  border-color: #cccccc;
+  font-size: 14px;
+}
+
+.btn-strong-solid,
+.btn-strong {
+  padding: 10px 14px 10px 14px;
+  border-color: #ff6347;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-strong-solid {
+  background-color: #ff6347;
+  color: #ffffff;
+}
+
+.btn-strong {
+  background-color: white;
+  color: #ff6347;
+}
+
+nav {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 1px 4px #e3e3e3;
+  z-index: 1;
+}
+
+nav .logo-div img.logo {
+  height: 28px;
+}
+
+nav ul.nav-links {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  left: 10%;
+}
+
+.container {
+  padding: 10vh 10vw 0 10vw;
+  min-height: 100vh;
+}
+
+.container .top {
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+
+.container .top .left {
+  width: 45vw;
+}
+
+.container .top .left .learn-more {
+  margin-left: 12px;
+}
+
+.container .top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+}
+
+.container .top .right img {
+  width: 300px;
+}
+
+.container .middle {
+  margin: 20px 0 80px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  height: 130px;
+  padding: 20px 400px 0 400px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ff6347;
+}
+
+footer img.logo {
+  height: 28px;
+  margin: -2px 0 0 -6px;
+}
+
+footer .footer-links {
+  display: flex;
+  column-gap: 20px;
+}
+
+footer a,
+footer h4 {
+  color: white;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+footer .links {
+  width: 150px;
+  font-size: 14px;
+}
+
+footer .follow-us {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .follow-us .socials {
+  display: flex;
+}
+
+footer .follow-us a {
+  height: auto;
+  padding: 4px 12px 0 0;
+}
+/*# sourceMappingURL=style.css.map */
