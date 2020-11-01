@@ -100,16 +100,6 @@ linechart = (id, label, year, cases, tempMin, tempMax) => {
     options: {
       legend: { display: true },
       title: { display: false },
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              // min: min - 5, // min y-axis value
-              // max: max + 5, // max y-axis value
-            },
-          },
-        ],
-      },
       animation: {
         duration: 750, // general animation time
       },
@@ -144,16 +134,7 @@ linechart2 = (id, myLabel, usLabel, year, myCases, usCases, tempMin, tempMax) =>
     options: {
       legend: { display: true },
       title: { display: false },
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              // min: min - 5, // min y-axis value
-              // max: max + 5, // max y-axis value
-            },
-          },
-        ],
-      },
+
       animation: {
         duration: 750, // general animation time
       },
@@ -232,7 +213,7 @@ doughnutChart = (id, label, year, cases, usCases, tempMin, tempMax) => {
       datasets: [
         {
           label: label,
-          backgroundColor: ["rgba(62, 149, 205, 0.2)", "rgba(62, 149, 205, 0.25)", "rgba(62, 149, 205, 0.30)", "rgba(62, 149, 205, 0.35)", "rgba(62, 149, 205, 0.40)", "rgba(62, 149, 205, 0.45)", "rgba(62, 149, 205, 0.50)", "rgba(62, 149, 205, 0.55)", "rgba(62, 149, 205, 0.60)", "rgba(62, 149, 205, 0.65)", "rgba(62, 149, 205, 0.70)", "rgba(62, 149, 205, 0.75)", "rgba(62, 149, 205, 0.80)", "rgba(62, 149, 205, 0.85)", "rgba(62, 149, 205, 0.90)", "rgba(62, 149, 205, 0.95)", "rgba(62, 149, 205, 1)", "rgba(62, 149, 205, 1)","rgba(62, 149, 205, 1)"],
+          backgroundColor: ["rgba(62, 149, 205, 0.2)", "rgba(62, 149, 205, 0.25)", "rgba(62, 149, 205, 0.30)", "rgba(62, 149, 205, 0.35)", "rgba(62, 149, 205, 0.40)", "rgba(62, 149, 205, 0.45)", "rgba(62, 149, 205, 0.50)", "rgba(62, 149, 205, 0.55)", "rgba(62, 149, 205, 0.60)", "rgba(62, 149, 205, 0.65)", "rgba(62, 149, 205, 0.70)", "rgba(62, 149, 205, 0.75)", "rgba(62, 149, 205, 0.80)", "rgba(62, 149, 205, 0.85)", "rgba(62, 149, 205, 0.90)", "rgba(62, 149, 205, 0.95)", "rgba(62, 149, 205, 1)", "rgba(62, 149, 205, 1)", "rgba(62, 149, 205, 1)"],
           data: cases,
         },
       ],
