@@ -18,12 +18,12 @@
 
 .container .questions .question {
   height: auto;
-  padding: 0 30vw 0 30vw;
+  padding: 0 35vw 0 35vw;
   border-radius: 20px;
 }
 
 .container .questions .question h4 {
-  margin: 12px 0 24px 0;
+  margin: 10px 0 24px 0;
 }
 
 .container .questions .question h4 i {
@@ -48,13 +48,12 @@
 }
 
 .container .questions .question .answers .answer {
-  padding: 12px 0 12px 20px;
+  padding: 10px 0 10px 20px;
   border: 1px solid #eee;
   border-radius: 8px;
   background: white;
   color: #333;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
   text-align: left;
   transition: 0.1s;
 }
@@ -90,10 +89,10 @@
 }
 
 .container .controls button.back {
-  padding: 0 0 0 30vw;
+  padding: 0 0 0 35vw;
 }
 
 .container .controls button.next {
-  padding: 0 30vw 0 0;
+  padding: 0 35vw 0 0;
 }
 /*# sourceMappingURL=self-evaluation.css.map */

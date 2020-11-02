@@ -13,10 +13,10 @@
     width: 100%;
     .question {
       height: auto;
-      padding: 0 30vw 0 30vw;
+      padding: 0 35vw 0 35vw;
       border-radius: 20px;
       h4 {
-        margin: 12px 0 24px 0;
+        margin: 10px 0 24px 0;
         i {
           margin-right: 12px;
         }
@@ -35,13 +35,12 @@
         row-gap: 10px;
         margin: 0 0 32px 0;
         .answer {
-          padding: 12px 0 12px 20px;
+          padding: 10px 0 10px 20px;
           border: 1px solid #eee;
           border-radius: 8px;
           background: white;
           color: #333;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 14px;
           text-align: left;
           transition: 0.1s;
           &:hover {
@@ -74,10 +73,10 @@
       border: none;
       color: #333;
       &.back {
-        padding: 0 0 0 30vw;
+        padding: 0 0 0 35vw;
       }
       &.next {
-        padding: 0 30vw 0 0;
+        padding: 0 35vw 0 0;
       }
     }
   }
