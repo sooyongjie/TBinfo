@@ -30,8 +30,8 @@ button {
   background-color: white;
   font-family: "Nunito", sans-serif;
   cursor: pointer;
+  transition: 0.15s;
   &:focus {
-    border: 1px solid black;
     outline: none;
   }
 }
@@ -48,6 +48,9 @@ button {
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
+  &:hover {
+    border: 1px solid white;
+  }
 }
 
 .btn-strong-solid {
@@ -58,6 +61,10 @@ button {
 .btn-strong {
   background-color: white;
   color: $color;
+  &:hover {
+    background: $color;
+    color: white;
+  }
 }
 
 nav {

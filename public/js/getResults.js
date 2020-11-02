@@ -20,7 +20,6 @@ if (response[5] == "Yes") {
 }
 
 const results = document.querySelector('#results')
-const percentage = document.querySelector('#percentage')
 
 if (chances == 0) {
     results.textContent = "We don't think you are at risk"
@@ -105,7 +104,7 @@ questionnaireChart = (id, data, labels) => {
             labels: labels,
             datasets: [{
                 label: "Label",
-                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
+                backgroundColor: ["#f4a261", "#e9c46a", "#dda15e"],
                 data: data
             }]
         },
@@ -117,6 +116,7 @@ questionnaireChart = (id, data, labels) => {
     });
 }
 
+const percentage = document.querySelector('#percentage')
 
 // Use requestAnimationFrame with setTimeout fallback
 window.requestAnimFrame = (function () {

@@ -28,10 +28,10 @@ button {
   background-color: white;
   font-family: "Nunito", sans-serif;
   cursor: pointer;
+  transition: 0.15s;
 }
 
 button:focus {
-  border: 1px solid black;
   outline: none;
 }
 
@@ -49,6 +49,11 @@ button:focus {
   font-weight: 600;
 }
 
+.btn-strong-solid:hover,
+.btn-strong:hover {
+  border: 1px solid white;
+}
+
 .btn-strong-solid {
   background-color: #ff6347;
   color: #ffffff;
@@ -57,6 +62,11 @@ button:focus {
 .btn-strong {
   background-color: white;
   color: #ff6347;
+}
+
+.btn-strong:hover {
+  background: #ff6347;
+  color: white;
 }
 
 nav {

@@ -26,7 +26,7 @@ chart = (yrStart, yrEnd, api) => {
 
 myCases = (yrStart, yrEnd, results) => {
   const data = xmlToJson(results);
-  let arr = data.data.data.slice(1, 21);
+  let arr = data.data.data.slice(0, 21);
   arr.reverse();
   let year = new Array();
   let cases = new Array();
@@ -264,7 +264,6 @@ horizontalBarChart = (id, myLabel, usLabel, year, myCases, usCases, tempMin, tem
   });
 };
 
-chart(2000, 2018, `https://api.worldbank.org/v2/country/my/indicator/SH.TBS.INCD`);
 
 const dropdown = document.querySelector("#md-select1");
 const dropdown2 = document.querySelector("#md-select2");
