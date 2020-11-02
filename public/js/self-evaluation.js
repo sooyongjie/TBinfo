@@ -1,3 +1,4 @@
+
 new Glider(document.querySelector('.questions'), {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -28,7 +29,6 @@ const selectedEl = (el => {
   input.setAttribute("value", el.textContent)
   el.parentElement.append(input)
 })
-
 
 checkInput = () => {
   let inputs = document.querySelectorAll("input[type=hidden]");
