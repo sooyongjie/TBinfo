@@ -57,12 +57,12 @@
   </nav>
   <!-- Container -->
   <div class="container">
-    <h1>Self Evaluation</h1>
+    <h2>Self Evaluation</h2>
     <form class="questions">
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Are you familiar with Tuberculosis?
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Yes</button>
           <button class="answer" onclick="selectedEl(this)" type="button">Just a bit</button>
@@ -70,26 +70,26 @@
         </div>
       </div>
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Are you aware of how Tuberculosis spreads?
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Yes</button>
           <button class="answer" onclick="selectedEl(this)" type="button">No</button>
         </div>
       </div>
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Are you aware of the differences between Latent Tuberculosis Infection
           and Tuberculosis Disease?
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Yes</button>
           <button class="answer" onclick="selectedEl(this)" type="button">No</button>
         </div>
       </div>
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Which of the following major symptoms do you have?
           <ul>
             <li>Bad cough for 3 weeks or longer</li>
@@ -97,7 +97,7 @@
             <li>Coughing up blood</li>
             <li>Coughing up sputum (phlegm within the lungs)</li>
           </ul>
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Two or more</button>
           <button class="answer" onclick="selectedEl(this)" type="button">Just one</button>
@@ -105,7 +105,7 @@
         </div>
       </div>
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Which of the following minor symptoms do you have?
           <ul>
             <li>Weakness & fatigue</li>
@@ -114,7 +114,7 @@
             <li>Chills</li>
             <li>Fever</li>
           </ul>
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Two or more</button>
           <button class="answer" onclick="selectedEl(this)" type="button">Just one</button>
@@ -122,9 +122,9 @@
         </div>
       </div>
       <div class="question">
-        <h3>
+        <h4>
           <i class="fa fa-question-circle"></i>Do you have HIV?
-        </h3>
+        </h4>
         <div class="answers">
           <button class="answer" onclick="selectedEl(this)" type="button">Yes</button>
           <button class="answer" onclick="selectedEl(this)" type="button">No</button>
@@ -132,7 +132,7 @@
         </div>
       </div>
       <div class="question" style="text-align: center;">
-        <h3 class="questions-complete">Login with Google to view results</h3>
+        <h4 class="questions-complete" id="login-success">Login with Google to view results</h4>
         <button type="button" class="btn-light" id="login-btn" onclick=checkInput()>Login</button>
       </div>
     </form>

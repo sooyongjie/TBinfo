@@ -1,20 +1,21 @@
 .container {
   min-height: 100vh !important;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   scroll-behavior: smooth;
-  h1 {
-    margin: 120px 0 25px 0;
+  h2 {
+    margin: 100px 0 25px 0;
   }
   .questions {
     width: 100%;
     .question {
       height: auto;
-      padding: 0 30vw 10px 30vw;
+      padding: 0 30vw 0 30vw;
       border-radius: 20px;
-      h3 {
+      h4 {
         margin: 12px 0 24px 0;
         i {
           margin-right: 12px;

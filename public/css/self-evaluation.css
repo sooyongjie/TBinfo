@@ -1,5 +1,6 @@
 .container {
   min-height: 100vh !important;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,8 +8,8 @@
   scroll-behavior: smooth;
 }
 
-.container h1 {
-  margin: 120px 0 25px 0;
+.container h2 {
+  margin: 100px 0 25px 0;
 }
 
 .container .questions {
@@ -17,23 +18,23 @@
 
 .container .questions .question {
   height: auto;
-  padding: 0 30vw 10px 30vw;
+  padding: 0 30vw 0 30vw;
   border-radius: 20px;
 }
 
-.container .questions .question h3 {
+.container .questions .question h4 {
   margin: 12px 0 24px 0;
 }
 
-.container .questions .question h3 i {
+.container .questions .question h4 i {
   margin-right: 12px;
 }
 
-.container .questions .question h3 ul {
+.container .questions .question h4 ul {
   margin: 5px 0 -12px 50px;
 }
 
-.container .questions .question h3 ul li {
+.container .questions .question h4 ul li {
   list-style-type: disc;
   font-weight: 400;
   font-size: 16px;

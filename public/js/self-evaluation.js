@@ -1,4 +1,3 @@
-
 new Glider(document.querySelector('.questions'), {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -72,10 +71,11 @@ loginWithGoogle = (inputs) => {
     let provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then((result) => {
       var userInfo = result.user
-      document.querySelector('#login-btn').textContent = userInfo.email
-      return userInfo;
+      document.querySelector('#login-success').textContent = `Hello, ${userInfo.displayName}!`
+      document.querySelector('#login-btn').textContent = "Applying magicry..."
+      return userInfo
     }).then(userInfo => submitQuestionaire(inputs, userInfo.uid, userInfo.email)).catch((error) => {
-      console.log('error: ', error);
+      console.log('error: ', error)
     })
   })
 }
