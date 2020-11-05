@@ -30,14 +30,14 @@ const selectedEl = (el => {
 })
 
 checkInput = () => {
-  let inputs = document.querySelectorAll("input[type=hidden]");
+  let inputs = document.querySelectorAll("input[type=hidden]")
   try {
     if (inputs.length < 6) {
-      alert("Please complete the evaluation before proceeding in!")
-      throw new Error("⚠ User have not complete evaluation");
+      throw new Error("Please complete the evaluation before proceeding")
     } else loginWithGoogle(inputs)
   } catch (error) {
-    console.log(error);
+    alert(error)
+    console.log("User have not complete evaluation.")
   }
 }
 

@@ -43,4 +43,20 @@
 .container table td {
   border-bottom: 1px solid #ffdfda;
 }
+
+.container .about-links {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.container .about-links i {
+  color: #ff6347;
+}
+
+.container .about-links a {
+  color: #222;
+}
 /*# sourceMappingURL=about.css.map */

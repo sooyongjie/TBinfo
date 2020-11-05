@@ -1,12 +1,49 @@
 .container {
-  padding: 60px 15vw 80px 15vw;
+  padding: 120px 15vw 80px 15vw;
   display: flex;
   flex-direction: column;
   row-gap: 0 !important;
 }
 
 .container img {
-  width: 300px;
+  margin-bottom: 50px;
+  height: 200px;
   align-self: center;
+}
+
+.container h2 {
+  margin-bottom: 16px;
+}
+
+.container p {
+  margin: 0 0 40px 0;
+}
+
+.container .roles {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.container .roles .member p {
+  margin: 0 0 4px 0;
+}
+
+.container .roles .member p.name {
+  font-weight: 600;
+}
+
+.container .roles .member ul {
+  margin-left: 22px;
+}
+
+.container .roles .member ul li::before {
+  content: "\2022";
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.4em;
+  color: #ff6347;
 }
 /*# sourceMappingURL=about-us.css.map */

@@ -103,7 +103,7 @@ questionnaireChart = (id, data, labels) => {
         data: {
             labels: labels,
             datasets: [{
-                label: "Label",
+                label: labels,
                 backgroundColor: ["#f4a261", "#e9c46a", "#dda15e"],
                 data: data
             }]

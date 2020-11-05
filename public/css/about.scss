@@ -36,4 +36,18 @@
       border-bottom: 1px solid #ffdfda;
     }
   }
+  .about-links {
+    // margin-top: 40px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 5px;
+    i {
+      color: #ff6347;
+    }
+    a {
+      color: #222;
+    }
+  }
 }
