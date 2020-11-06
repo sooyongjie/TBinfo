@@ -84,7 +84,8 @@ myUScases = (yrStart, yrEnd, myResults, usResults) => {
 linechart = (id, label, year, cases, tempMin, tempMax) => {
   let min = parseInt(tempMin);
   let max = parseInt(tempMax);
-  new Chart(id, {
+  if (window.myChart != undefined) myChart.destroy();
+  window.myChart = new Chart(id, {
     type: "line",
     data: {
       labels: year,
@@ -112,7 +113,8 @@ linechart = (id, label, year, cases, tempMin, tempMax) => {
 };
 
 linechart2 = (id, myLabel, usLabel, year, myCases, usCases, tempMin, tempMax) => {
-  new Chart(id, {
+  if (window.myChart != undefined) myChart.destroy();
+  window.myChart = new Chart(id, {
     type: "line",
     data: {
       labels: year,
@@ -273,6 +275,8 @@ const btn1 = document.querySelector("#md-select1 label button");
 const btn2 = document.querySelector("#md-select2 label button");
 const btn3 = document.querySelector("#md-select3 label button");
 const btn4 = document.querySelector("#md-select4 label button");
+
+window.myChart;
 
 dropdown.addEventListener("click", () => {
   dropdown.classList.toggle("active");
