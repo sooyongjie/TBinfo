@@ -1,9 +1,8 @@
 @media only screen and (max-width: 1000px) {
-  .container {
-    .charts {
-      canvas {
-        max-width: 350px !important;
-      }
+  .charts {
+    width: 100% !important;
+    canvas {
+      max-width: 350px !important;
     }
   }
 }

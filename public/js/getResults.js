@@ -24,13 +24,13 @@ const results = document.querySelector('#results')
 if (chances == 0) {
     results.textContent = "We don't think you are at risk"
 } else if (chances < 40) {
-    results.textContent = "Hmm"
+    results.textContent = "You have a low risk"
 } else if (chances < 60) {
-    results.textContent = "Hmmmm"
+    results.textContent = "You have a moderate risk"
 } else if (chances < 80) {
-    results.textContent = "Wow, hello tuberculosis patient"
+    results.textContent = "You have a high risk"
 } else if (chances >= 80) {
-    results.textContent = "You're quite fucked"
+    results.textContent = "We hope you're not playing around! You have a very high risk"
 }
 
 let db = firebase.firestore();
